@@ -15,10 +15,10 @@ describe('App', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should render the user name', async () => {
+  it('should render the event binding heading', async () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Pooja');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Event Binding');
   });
 });
