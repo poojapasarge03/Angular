@@ -10,18 +10,12 @@ import { Navbar } from './navbar/navbar';
 })
 export class App {
   protected readonly title = signal('angular-app');
-  name = "Pooja"
-  age = 20
-
-  updateName(){
-    this.name = "Pasarge";
+  
+  count = 0;
+  counter() {
+    this.count++;
+    console.log(this.count);
   }
 
-  callme(){
-    alert("Button clicked")
-  }
-
-  sayHello(){
-    console.log("HEllo Guys")
-  }
+  
 }

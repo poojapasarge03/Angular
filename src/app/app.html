@@ -1,24 +1,5 @@
-use 'client'
-<app-profile></app-profile>
 
-<h1>{{ name }}</h1>
-<h2>{{ age }}</h2>
-
-<app-navbar></app-navbar>
-<!-- 
-<div class = "text-green-600">
-  <h1>Hello World</h1>
-</div>
-
-<h2 class = "text-red-400 bg-black"> Hello Nayii</h2>
-
-<h1>{{title()}}</h1>
-<h1>{{name}}</h1>  //interpolation -->
-
-<!-- <h1>{{updateName}}</h1>
-<h1> {{10 + 20 + 30}}</h1>
-<h1> 38 + 62 </h1> -->
-
-<button (click) = "callme()">Click me</button>
-<button (click) = " updateName()">Name will display</button>
-<h2 (mouseover) = " sayHello()">Mouse over here</h2>
+<h1>Event Binding</h1>
+<button (click) = "counter()"> - </button>
+<span>{{ count }}</span>
+<button (click) = "counter()"> + </button>
